@@ -1,0 +1,15 @@
+# Packages #
+############
+*.gz
+*.rar
+*.tar
+*.zip
+
+# Directories #
+###############
+BUILD/
+BUILDROOT/
+RPMS/
+SOURCES/
+SRPMS/
+tmp/
