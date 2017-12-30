@@ -1,3 +1,19 @@
+%define    packager           Damir Porobic <damir.porobic@gmx.com>
+%define  __spec_install_post %{nil}
+%define    debug_package     %{nil}
+%define  __os_install_post   %{_dbpath}/brp-compress
+%define  _topdir             %(pwd)
+%define  _tmppath            %{_topdir}/tmp
+%define  _rpmtopdir          %{_topdir}
+%define  _builddir           %{_rpmtopdir}/BUILD
+%define  _rpmdir             %{_rpmtopdir}/RPMS
+%define  _sourcedir          %{_rpmtopdir}/SOURCES
+%define  _specdir            %{_rpmtopdir}/SPECS
+%define  _srcrpmdir          %{_rpmtopdir}/SRPMS
+%define  _signature           gpg
+%define  _gpg_name            Ksnip
+
+
 Name:    ksnip
 Summary: Screenshot Tool
 Version: 1.4.0
@@ -8,9 +24,6 @@ License: GPLV2+
 Group:   Application/Utility
 BuildRequires: update-desktop-files
 
-%define  __spec_install_post %{nil}
-%define    debug_package %{nil}
-%define  __os_install_post %{_dbpath}/brp-compress
 
 %description
 Screenshot tool inspired by Windows Snipping Tool and made with Qt for Linux
